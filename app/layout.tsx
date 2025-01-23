@@ -1,4 +1,4 @@
-import { NavBar } from "@/components/nav-bar"
+import { NavBar } from "@/components/nav-bar.tsx"
 import "@/styles/globals.css"
 import { Inter } from "next/font/google"
 
