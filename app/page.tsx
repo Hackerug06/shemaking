@@ -1,7 +1,7 @@
-import { ArtistProfile } from "@/components/artist-profile"
-import { SongList } from "@/components/song-list"
-import { UpcomingEvents } from "@/components/upcoming-events"
-import { AnimatedHeading } from "@/components/animated-heading"
+import { ArtistProfile } from "@/components/artist-profile.tsx"
+import { SongList } from "@/components/song-list.tsx"
+import { UpcomingEvents } from "@/components/upcoming-events.tsx"
+import { AnimatedHeading } from "@/components/animated-heading.tsx"
 
 export default function Home() {
   return (
