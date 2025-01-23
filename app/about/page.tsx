@@ -1,5 +1,5 @@
-import { AnimatedHeading } from "@/components/animated-heading"
-import { ArtistProfile } from "@/components/artist-profile"
+import { AnimatedHeading } from "@/components/animated-heading.tsx"
+import { ArtistProfile } from "@/components/artist-profile.tsx"
 
 export default function About() {
   return (
