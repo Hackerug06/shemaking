@@ -1,4 +1,4 @@
-import { AnimatedHeading } from "./components/animated-heading"
+import { AnimatedHeading } from "@/components/animated-heading"
 import { ArtistProfile } from "@/components/artist-profile"
 
 export default function About() {
