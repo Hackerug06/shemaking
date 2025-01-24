@@ -1,7 +1,7 @@
-import { ArtistProfile } from "@/components/artist-profile"
-import { SongList } from "@/components/song-list"
-import { UpcomingEvents } from "@/components/upcoming-events"
-import { AnimatedHeading } from "@/components/animated-heading"
+import { ArtistProfile } from "@/components/ui/artist-profile"
+import { SongList } from "@/components/ui/song-list"
+import { UpcomingEvents } from "@/components/ui/upcoming-events"
+import { AnimatedHeading } from "@/components/ui/animated-heading"
 
 export default function Home() {
   return (
@@ -14,3 +14,4 @@ export default function Home() {
   )
 }
 
+    
