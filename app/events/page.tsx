@@ -1,5 +1,5 @@
-import { AnimatedHeading } from "@/components/animated-heading"
-import { UpcomingEvents } from "@/components/upcoming-events"
+import { AnimatedHeading } from "@/components/ui/animated-heading"
+import { UpcomingEvents } from "@/components/ui/upcoming-events"
 
 export default function Events() {
   return (
@@ -11,3 +11,4 @@ export default function Events() {
   )
 }
 
+      
