@@ -2,20 +2,20 @@ import Image from "next/image"
 
 const songs = [
   {
-    title: "King's Anthem",
+    title: "Chasing Money",
     duration: "3:45",
     releaseDate: "2023-05-15",
     size: "7.2 MB",
-    cover: "/song1-cover.jpg",
+    cover: "chasingmoney.jpg",
     file: "/songs/kings-anthem.mp3",
   },
   {
-    title: "Crown Me",
+    title: "Reap",
     duration: "4:12",
     releaseDate: "2023-07-22",
     size: "8.1 MB",
-    cover: "/song2-cover.jpg",
-    file: "/songs/crown-me.mp3",
+    cover: "Reap.jpg",
+    file: "reap.mp3",
   },
   // Add more songs as needed
 ]
