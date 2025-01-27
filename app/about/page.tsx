@@ -17,11 +17,11 @@ export default function About() {
         <div>
           <p className="text-lg mb-4">
             Shema King👑 is a rising star in the music industry, known for his unique blend of afrobeats and
-            contemporary R&B. Born and raised in [City/Country], Shema discovered his passion for music at a young age.
+            contemporary R&B. Born and raised in Kampala, Uganda, Shema discovered his passion for music at a young age.
           </p>
           <p className="text-lg mb-4">
             With a voice that captivates and lyrics that inspire, Shema King👑 has been making waves in the music scene
-            since his debut in [Year]. His music often explores themes of love, empowerment, and cultural pride.
+            since his debut in 2021. His music often explores themes of love, empowerment, and cultural pride.
           </p>
           <p className="text-lg">
             Shema King👑's journey is just beginning, and he's excited to share his music with the world. Stay tuned for
