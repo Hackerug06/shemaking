@@ -7,7 +7,7 @@ const songs = [
     releaseDate: "2023-05-15",
     size: "7.2 MB",
     cover: "chasingmoney.jpg",
-    file: "/songs/kings-anthem.mp3",
+    file: "./",
   },
   {
     title: "Reap",
