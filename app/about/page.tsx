@@ -9,7 +9,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="relative w-full md:w-1/2 aspect-square"> {/* Added container with aspect ratio */}
           <Image
-            src={`/logo.png`}  {/* Updated path */}
+            src={`/images/shema-king-profile.jpg`}  {/* Updated path */}
             alt="Shema King"
             fill
             className="rounded-lg shadow-lg object-cover"
@@ -31,4 +31,4 @@ export default function About() {
   )
 }
 
-          
+      
