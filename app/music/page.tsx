@@ -2,46 +2,21 @@ import Image from "next/image"
 
 const songs = [
   {
-    title: "Chasing Money",
-    duration: "2:42",
-    releaseDate: "2023-05-9",
-    size: "2.47 MB",
-    cover: "/Chasing-Money.jpg",
-    file: "/Chasing-Money-Shema-King.mp3",
+    title: "King's Anthem",
+    duration: "3:45",
+    releaseDate: "2023-05-15",
+    size: "7.2 MB",
+    cover: "/images/song1-cover.jpg", // Updated path
+    file: "/songs/kings-anthem.mp3", // Updated path
   },
   {
-    title: "Dirty Dance",
-    duration: "2:43",
-    releaseDate: "2023-08-16",
-    size: "2.49 MB",
-    cover: "/Dirty-Dance.jpg",
-    file: "/Dirty-Dance-Shema-King-Official.mp3",
+    title: "Crown Me",
+    duration: "4:12",
+    releaseDate: "2023-07-22",
+    size: "8.1 MB",
+    cover: "/images/song2-cover.jpg", // Updated path
+    file: "/songs/crown-me.mp3", // Updated path
   },
-  {
-    title: "Reap",
-    duration: "3:14",
-    releaseDate: "2023-09-3",
-    size: "2.97 MB",
-    cover: "/Reap.jpg",
-    file: "/Reap-Shema-King.mp3",
-  },
-  {
-    title: "No Stress",
-    duration: "2:33",
-    releaseDate: "2024-06-06",
-    size: "2.33 MB",
-    cover: "/No-Stress.jpg",
-    file: "/No Stress-Shema-King.mp3",
-  },
-  {
-    title: "Mr Right",
-    duration: "2:34",
-    releaseDate: "2023-12-15",
-    size: "2.35 MB",
-    cover: "/Mr-Right.jpg",
-    file: "/Mr-Right-Shema-King.mp3",
-  },
-  // Add more songs as needed
 ]
 
 export default function Music() {
@@ -53,13 +28,16 @@ export default function Music() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {songs.map((song, index) => (
           <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg">
-            <Image
-              src={song.cover || "/placeholder.svg"}
-              alt={`${song.title} Cover`}
-              width={200}
-              height={200}
-              className="rounded-md mb-4"
-            />
+            <div className="relative w-full aspect-square mb-4">
+              {" "}
+              {/* Added container with aspect ratio */}
+              <Image
+                src={song.cover || "/placeholder.svg"}
+                alt={`${song.title} Cover`}
+                fill
+                className="rounded-md object-cover"
+              />
+            </div>
             <h2 className="text-xl font-semibold mb-2">{song.title}</h2>
             <p>Duration: {song.duration}</p>
             <p>Release Date: {song.releaseDate}</p>
@@ -82,3 +60,4 @@ export default function Music() {
   )
 }
 
+    
