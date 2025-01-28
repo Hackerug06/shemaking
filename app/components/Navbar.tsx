@@ -21,7 +21,14 @@ const Navbar = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="logo.png" alt="Shema King Logo" width={50} height={50} className="animate-pulse" />
+            <Image
+              src={`/logo.png`}  {/* Updated path */}
+              alt="Shema King Logo"
+              width={50}
+              height={50}
+              className="animate-pulse"
+              priority
+            />
             <span className="ml-2 text-xl font-bold">Shema King👑</span>
           </Link>
           <div className="hidden md:flex space-x-4">
@@ -66,3 +73,4 @@ const Navbar = () => {
 
 export default Navbar
 
+  
