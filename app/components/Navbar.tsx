@@ -17,12 +17,12 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <div className="bg-gray-800 p-4">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src={`/logo.png`}  {/* Updated path */}
+              src="/images/shema-king-logo.png"
               alt="Shema King Logo"
               width={50}
               height={50}
@@ -45,7 +45,11 @@ const Navbar = () => {
             ))}
           </div>
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white focus:outline-none"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -67,7 +71,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </nav>
+    </div>
   )
 }
 
