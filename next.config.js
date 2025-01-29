@@ -3,7 +3,7 @@ const nextConfig = {
   output: "standalone",
   images: {
     unoptimized: true,
-    domains: ["localhost", "your-netlify-site.netlify.app"], // Replace with your actual Netlify domain
+    domains: ["localhost", "https://shema1king.netlify.app/"], // Replace with your actual Netlify domain
     remotePatterns: [
       {
         protocol: "https",
