@@ -2,13 +2,13 @@ import Image from "next/image"
 import { checkImageExists } from "./utils/imageChecker"
 
 export default async function Page() {
-  const heroImageSrc = "/images/Chasing-Money.jpg"
+  const heroImageSrc = "/images/FB_IMG_1718516090673.jpg"
   const heroImageExists = await checkImageExists(heroImageSrc)
 
   return (
     <main className="container mx-auto mt-10 px-4">
       <h1 className="text-4xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
-        Welcome to Shema King👑's Official Website
+        Shema 👑King👑 Welcomes
       </h1>
       <div className="relative w-full h-[400px]">
         {heroImageExists ? (
