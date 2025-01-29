@@ -1,11 +1,16 @@
 export async function checkImageExists(src: string): Promise<boolean> {
-  try {
-    const response = await fetch(src, { method: "HEAD" })
-    return response.ok
-  } catch (error) {
-    console.error("Error checking image:", error)
-    return false
+  if (typeof window === "undefined") {
+    // Server-side: we can't check directly, so we assume it exists
+    return true
   }
+
+  // Client-side: we can check if the image loads
+  return new Promise((resolve) => {
+    const img = new Image()
+    img.onload = () => resolve(true)
+    img.onerror = () => resolve(false)
+    img.src = src
+  })
 }
 
-      
+  
