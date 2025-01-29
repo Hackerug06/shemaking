@@ -3,13 +3,7 @@ const nextConfig = {
   output: "standalone",
   images: {
     unoptimized: true,
-    domains: ["localhost", "https://shema1king.netlify.app/"], // Replace with your actual Netlify domain
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
+    domains: ["localhost", "https://shema1king.netlify.app/music"], // Replace with your actual Netlify domain
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -22,4 +16,4 @@ const nextConfig = {
 
 module.exports = nextConfig
 
-        
+      
