@@ -2,18 +2,18 @@ import Image from "next/image"
 import { checkImageExists } from "./utils/imageChecker"
 
 export default async function Page() {
-  const heroImageSrc = "/images/FB_IMG_1718516090673.jpg"
+  const heroImageSrc = "/images/Home1.jpg"
   const heroImageExists = await checkImageExists(heroImageSrc)
 
   return (
     <main className="container mx-auto mt-10 px-4">
       <h1 className="text-4xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
-        Shema 👑King👑 Welcomes
+        Welcome to Shema King👑's Official Website
       </h1>
       <div className="relative w-full h-[400px]">
         {heroImageExists ? (
           <Image
-            src={heroImageSrc || "/images/Home1.jpg"}
+            src={heroImageSrc || "/placeholder.svg"}
             alt="Shema King"
             fill
             className="rounded-lg shadow-lg object-cover"
@@ -32,4 +32,4 @@ export default async function Page() {
   )
 }
 
-    
+        
