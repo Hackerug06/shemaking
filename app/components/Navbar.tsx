@@ -1,14 +1,16 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
+import { checkImageExists } from "../utils/imageChecker"
 
 const Navbar = () => {
   const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [logoSrc, setLogoSrc] = useState("/images/logo.png")
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -16,13 +18,24 @@ const Navbar = () => {
     { name: "About", path: "/about" },
   ]
 
+  useEffect(() => {
+    async function verifyLogo() {
+      const exists = await checkImageExists(logoSrc)
+      if (!exists) {
+        console.warn("Logo not found, using fallback")
+        setLogoSrc("/logo.png")
+      }
+    }
+    verifyLogo()
+  }, [logoSrc])
+
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="logo.png"
+              src={logoSrc || "/logo.png"}
               alt="Shema King Logo"
               width={50}
               height={50}
