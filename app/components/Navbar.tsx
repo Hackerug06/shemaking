@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo.png"
+              src="logo.png"
               alt="Shema King Logo"
               width={50}
               height={50}
