@@ -7,7 +7,7 @@ const songs = [
     duration: "3:45",
     releaseDate: "2023-05-15",
     size: "7.2 MB",
-    cover: "/images/song1-cover.jpg",
+    cover: "/images/Chasing-Money.jpg",
     file: "/songs/kings-anthem.mp3",
   },
   {
