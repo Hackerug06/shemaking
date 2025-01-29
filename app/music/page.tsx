@@ -11,12 +11,12 @@ const songs = [
     file: "/Chasing-Money-Shema-King.mp3",
   },
   {
-    title: "Crown Me",
-    duration: "4:12",
-    releaseDate: "2023-07-22",
-    size: "8.1 MB",
-    cover: "/images/song2-cover.jpg",
-    file: "/songs/crown-me.mp3",
+    title: "Dirty Dance",
+    duration: "2:43",
+    releaseDate: "2023-08-16",
+    size: "2.49MB",
+    cover: "/Dirty-Dance.jpg",
+    file: "/Dirty-Dance-Shema-King-Official.mp3",
   },
 ]
 
