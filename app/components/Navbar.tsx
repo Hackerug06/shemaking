@@ -17,7 +17,7 @@ const Navbar = () => {
   ]
 
   return (
-    <div className="bg-gray-800 p-4">
+    <nav className="bg-gray-800 p-4">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
@@ -45,11 +45,7 @@ const Navbar = () => {
             ))}
           </div>
           <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white focus:outline-none"
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            >
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -71,7 +67,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </div>
+    </nav>
   )
 }
 
