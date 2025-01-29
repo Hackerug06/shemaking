@@ -3,20 +3,20 @@ import { checkImageExists } from "../utils/imageChecker"
 
 const songs = [
   {
-    title: "Chasing Money",
-    duration: "2:42",
-    releaseDate: "2023-05-09",
-    size: "2.47 MB",
-    cover: "/images/Chasing-Money.jpg",
-    file: "/Chasing-Money-Shema-King.mp3",
+    title: "King's Anthem",
+    duration: "3:45",
+    releaseDate: "2023-05-15",
+    size: "7.2 MB",
+    cover: "/images/song1-cover.jpg",
+    file: "/songs/kings-anthem.mp3",
   },
   {
-    title: "Dirty Dance",
-    duration: "2:43",
-    releaseDate: "2023-08-16",
-    size: "2.49MB",
-    cover: "/images/Dirty-Dance.jpg",
-    file: "/Dirty-Dance-Shema-King-Official.mp3",
+    title: "Crown Me",
+    duration: "4:12",
+    releaseDate: "2023-07-22",
+    size: "8.1 MB",
+    cover: "/images/song2-cover.jpg",
+    file: "/songs/crown-me.mp3",
   },
 ]
 
@@ -46,7 +46,7 @@ export default async function Music() {
                 />
               ) : (
                 <div className="w-full h-full bg-gray-300 flex items-center justify-center rounded-md">
-                  <span className="text-gray-600">Cover not found</span>
+                  <span className="text-gray-600">Cover not found: {song.cover}</span>
                 </div>
               )}
             </div>
