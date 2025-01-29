@@ -2,7 +2,7 @@ import Image from "next/image"
 import { checkImageExists } from "../utils/imageChecker"
 
 export default async function About() {
-  const profileImageSrc = "/images/about1.jpg"
+  const profileImageSrc = "/images/shema-king-profile.jpg"
   const profileImageExists = await checkImageExists(profileImageSrc)
 
   return (
@@ -14,7 +14,7 @@ export default async function About() {
         <div className="relative w-full md:w-1/2 aspect-square">
           {profileImageExists ? (
             <Image
-              src={profileImageSrc || "/images/FB_IMG_1718516090673.jpg"}
+              src={profileImageSrc || "/placeholder.svg"}
               alt="Shema King"
               fill
               className="rounded-lg shadow-lg object-cover"
@@ -27,7 +27,6 @@ export default async function About() {
         </div>
         <div className="md:w-1/2">
           <p className="text-lg mb-4">
-            <p className="text-lg mb-4">
             <b>Uwimbabazi Shema</b> known as Shema King is a rising star in the music industry. He was
               born on <b>12th December 2007</b>. He was born and raised in Kampala, Uganda.He has a voice 
               that captivates and lyrics that inspire. Heis widely
@@ -38,22 +37,15 @@ export default async function About() {
               hiphop, afrobeat ,afropop and amapiano music. This makes him
               to be multi-talented.
             </p>
-          
           <p className="text-lg">
             Shema King👑's journey is just beginning, and he's excited to share his music with the world. Stay tuned for
             upcoming releases and live performances!
+            <br><b>It's time for the best, No time for the rest.</b></br>
           </p>
-            <h1 className="text-4xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
-        Shema King👑 Motto
-      </h1>
-            <p className="text-lg">
-            It's time for the best, No time for the rest #shemaking </p>
-      
         </div>
       </div>
     </main>
   )
 }
 
-
-      
+  
