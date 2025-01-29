@@ -14,7 +14,7 @@ export default async function About() {
         <div className="relative w-full md:w-1/2 aspect-square">
           {profileImageExists ? (
             <Image
-              src={profileImageSrc || "logo.png"}
+              src={profileImageSrc || "/images/FB_IMG_1718516090673.jpg"}
               alt="Shema King"
               fill
               className="rounded-lg shadow-lg object-cover"
