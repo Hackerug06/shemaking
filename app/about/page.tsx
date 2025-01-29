@@ -2,7 +2,7 @@ import Image from "next/image"
 import { checkImageExists } from "../utils/imageChecker"
 
 export default async function About() {
-  const profileImageSrc = "/images/shema-king-profile.jpg"
+  const profileImageSrc = "/images/about1.jpg"
   const profileImageExists = await checkImageExists(profileImageSrc)
 
   return (
