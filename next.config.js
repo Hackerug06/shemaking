@@ -3,15 +3,18 @@ const nextConfig = {
   output: "standalone",
   images: {
     unoptimized: true,
+    domains: ["localhost", "your-netlify-site.netlify.app"], // Replace with your actual Netlify domain
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
   },
-  // Ensure static files are copied to the correct location
   webpack: (config) => {
     config.module.rules.push({
-      test: /\.(mp3)$/,
+      test: /\.(png|jpg|jpeg|gif|svg|mp3)$/i,
       type: "asset/resource",
-      generator: {
-        filename: "static/media/[name][ext]",
-      },
     })
     return config
   },
@@ -19,4 +22,4 @@ const nextConfig = {
 
 module.exports = nextConfig
 
-      
+        
