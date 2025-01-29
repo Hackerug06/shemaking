@@ -1,6 +1,10 @@
 import Image from "next/image"
+import { checkImageExists } from "../utils/imageChecker"
 
-export default function Page() {
+export default async function About() {
+  const profileImageSrc = "/images/shema-king-profile.jpg"
+  const profileImageExists = await checkImageExists(profileImageSrc)
+
   return (
     <main className="container mx-auto mt-10 px-4">
       <h1 className="text-4xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
@@ -8,13 +12,18 @@ export default function Page() {
       </h1>
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="relative w-full md:w-1/2 aspect-square">
-          <Image
-            src="/images/shema-king-profile.jpg"
-            alt="Shema King"
-            fill
-            className="rounded-lg shadow-lg object-cover"
-            priority
-          />
+          {profileImageExists ? (
+            <Image
+              src={profileImageSrc || "logo.png"}
+              alt="Shema King"
+              fill
+              className="rounded-lg shadow-lg object-cover"
+            />
+          ) : (
+            <div className="w-full h-full bg-gray-300 flex items-center justify-center rounded-lg shadow-lg">
+              <span className="text-gray-600">Profile image not found</span>
+            </div>
+          )}
         </div>
         <div className="md:w-1/2">
           <p className="text-lg mb-4">
@@ -35,4 +44,4 @@ export default function Page() {
   )
 }
 
-        
+      
