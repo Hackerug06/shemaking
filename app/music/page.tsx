@@ -7,7 +7,7 @@ const songs = [
     duration: "2:42",
     releaseDate: "2023-05-09",
     size: "2.47 MB",
-    cover: "/Chasing-Money.jpg",
+    cover: "/images/Chasing-Money.jpg",
     file: "/Chasing-Money-Shema-King.mp3",
   },
   {
@@ -15,7 +15,7 @@ const songs = [
     duration: "2:43",
     releaseDate: "2023-08-16",
     size: "2.49MB",
-    cover: "/Dirty-Dance.jpg",
+    cover: "/images/Dirty-Dance.jpg",
     file: "/Dirty-Dance-Shema-King-Official.mp3",
   },
 ]
