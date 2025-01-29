@@ -3,12 +3,12 @@ import { checkImageExists } from "../utils/imageChecker"
 
 const songs = [
   {
-    title: "King's Anthem",
-    duration: "3:45",
-    releaseDate: "2023-05-15",
-    size: "7.2 MB",
-    cover: "/images/song1-cover.jpg",
-    file: "/songs/kings-anthem.mp3",
+    title: "Chasing Money",
+    duration: "2:42",
+    releaseDate: "2023-05-09",
+    size: "2.47 MB",
+    cover: "/Chasing-Money.jpg",
+    file: "/Chasing-Money-Shema-King.mp3",
   },
   {
     title: "Crown Me",
