@@ -3,7 +3,7 @@ const nextConfig = {
   output: "standalone",
   images: {
     unoptimized: true,
-    domains: ["localhost", "https://shema1king.netlify.app/music"], // Replace with your actual Netlify domain
+    domains: ["localhost", "https://shema1king.netlify.app/about"], // Replace with your actual Netlify domain
   },
   webpack: (config) => {
     config.module.rules.push({
