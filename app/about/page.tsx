@@ -14,7 +14,7 @@ export default async function About() {
         <div className="relative w-full md:w-1/2 aspect-square">
           {profileImageExists ? (
             <Image
-              src={profileImageSrc || "/placeholder.svg"}
+              src={profileImageSrc || "/images/about1.jpg"}
               alt="Shema King"
               fill
               className="rounded-lg shadow-lg object-cover"
