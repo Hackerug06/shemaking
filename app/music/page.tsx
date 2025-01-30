@@ -31,8 +31,8 @@ const songs = [
     duration: "2:42",
     releaseDate: "2023-04-3",
     size: "2.59 MB",
-    cover: "/images/Dirty-Dance.jpg",
-    file: "/Reap-Shema-King.mp3",
+    cover: "/images/Chasing-Money.jpg",
+    file: "/Chasing-Money-Shema-King.mp3",
   },
   {
     title: "Dirty Dance",
