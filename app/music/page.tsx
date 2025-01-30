@@ -24,7 +24,7 @@ const songs = [
     releaseDate: "2024-08-13",
     size: "2.44 MB",
     cover: "/images/No-Stress.jpg",
-    file: "/No Stress-Shema-King-Official.mp3",
+    file: "/No Stress-Shema-King.mp3",
   },
   {
     title: "Chasing Money",
