@@ -27,16 +27,22 @@ export default async function About() {
         </div>
         <div className="md:w-1/2">
           <p className="text-lg mb-4">
-            Shema King👑 is a rising star in the music industry, known for his unique blend of afrobeats and
-            contemporary R&B. Born and raised in [City/Country], Shema discovered his passion for music at a young age.
+            Uwimbabazi Shema known as Shema King is a rising star in the music industry. He was
+              born on 12th December 2007. He was born and raised in Kampala, Uganda.He has a voice 
+              that captivates and lyrics that inspire. He is widely
+              recognised by his stage name "Shema King".
+              He is an African rapper who lives in Uganda since his debut in 2023.
+              His music often explores themes of love, empower, and cultural pride.
+              He does multiple generals of music such as drill,
+              hiphop, afrobeat ,afropop and amapiano music. This makes him
+              to be multi-talented.
           </p>
           <p className="text-lg mb-4">
-            With a voice that captivates and lyrics that inspire, Shema King👑 has been making waves in the music scene
-            since his debut in [Year]. His music often explores themes of love, empowerment, and cultural pride.
+             Shema King👑's journey is just beginning, and he's excited to share his music with the world. Stay tuned for
+            upcoming releases and live performances!
           </p>
           <p className="text-lg">
-            Shema King👑's journey is just beginning, and he's excited to share his music with the world. Stay tuned for
-            upcoming releases and live performances!
+            It's Time For The Best, No Time For The Rest ##shemaking
           </p>
         </div>
       </div>
