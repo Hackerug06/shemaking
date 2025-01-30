@@ -2,7 +2,7 @@ import Image from "next/image"
 import { checkImageExists } from "../utils/imageChecker"
 
 export default async function About() {
-  const profileImageSrc = "/images/about1.jpg"
+  const profileImageSrc = "/images/about.jpg"
   const profileImageExists = await checkImageExists(profileImageSrc)
 
   return (
@@ -14,14 +14,14 @@ export default async function About() {
         <div className="relative w-full md:w-1/2 aspect-square">
           {profileImageExists ? (
             <Image
-              src={profileImageSrc || "/images/about1.jpg"}
+              src={profileImageSrc || "/placeholder.svg"}
               alt="Shema King"
               fill
               className="rounded-lg shadow-lg object-cover"
             />
           ) : (
             <div className="w-full h-full bg-gray-300 flex items-center justify-center rounded-lg shadow-lg">
-              <span className="text-gray-600">Profile image not found</span>
+              <span className="text-gray-600">Profile image not found: {profileImageSrc}</span>
             </div>
           )}
         </div>
@@ -38,11 +38,11 @@ export default async function About() {
               to be multi-talented.
           </p>
           <p className="text-lg mb-4">
-             Shema King👑's journey is just beginning, and he's excited to share his music with the world. Stay tuned for
+            Shema King👑's journey is just beginning, and he's excited to share his music with the world. Stay tuned for
             upcoming releases and live performances!
           </p>
           <p className="text-lg">
-            It's Time For The Best, No Time For The Rest ##shemaking
+            It's Time For The Best, No Time For the Rest##shemaking
           </p>
         </div>
       </div>
@@ -50,4 +50,4 @@ export default async function About() {
   )
 }
 
-    
+  
