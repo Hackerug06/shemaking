@@ -13,7 +13,7 @@ export default async function Page() {
       <div className="relative w-full h-[400px]">
         {heroImageExists ? (
           <Image
-            src={heroImageSrc || "/images/Home1.jpg"}
+            src={heroImageSrc || "/Home1.jpg"}
             alt="Shema King"
             fill
             className="rounded-lg shadow-lg object-cover"
